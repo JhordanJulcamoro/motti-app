@@ -10,6 +10,7 @@ export default function Header() {
         flexDirection: "row",
         justifyContent: "space-evenly",
         alignItems:'center',
+        padding:5,
       }}
     >
       <Image
@@ -21,7 +22,7 @@ export default function Header() {
         <TextInput placeholder="Search" style={styles.searchBar} />
       </View>
       <Image
-        source={require("./../../../assets/icon.png")}
+        source={require("./../../../assets/icon_motti.png")}
         style={styles.userImage}
       />
     </View>
@@ -30,8 +31,8 @@ export default function Header() {
 
 const styles = StyleSheet.create({
   logo: {
-    width: 50,
-    height: 50,
+    width: 60,
+    height: 60,
   },
   searchBar: {
     borderWidth: 1,
