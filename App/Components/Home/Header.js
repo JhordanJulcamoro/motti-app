@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet, TextInput, Dimensions } from "react-native";
 import React from "react";
+import Colors from "../../Shared/Colors";
 
 export default function Header() {
   return (
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
   },
   searchBar: {
     borderWidth: 1,
-    borderColor: "0000",
+    borderColor: Colors.black,
     padding: 4,
     borderRadius: 50,
     paddingLeft: 10,
