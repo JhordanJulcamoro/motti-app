@@ -21,9 +21,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff",
-        "package":"com.julhua.mottiApp",
-        "googleMapsApiKey":"AIzaSyBPJ1jwGwlcdM067zYXwd4AgzzAC_2mM8Y"
-      }
+        "package":"com.julhua.mottiApp"
+      },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "googleMapsApiKey":"AIzaSyBPJ1jwGwlcdM067zYXwd4AgzzAC_2mM8Y",
     },
     "web": {
       "favicon": "./assets/favicon.png"
