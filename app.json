@@ -20,7 +20,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "package":"com.julhua.mottiApp",
+        "googleMapsApiKey":"AIzaSyBPJ1jwGwlcdM067zYXwd4AgzzAC_2mM8Y"
       }
     },
     "web": {
