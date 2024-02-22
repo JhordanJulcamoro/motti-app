@@ -11,6 +11,7 @@ export default function GoogleMapView() {
     longitudeDelta: 0.0421,
   });
 
+
   return (
     <View style={{ marginTop: 20 }}>
       <MapView
