@@ -14,3 +14,17 @@ emulator -list-avds
 npm install --global expo-cli
 npx create-expo-app
 npm start || npm run android
+
+>React Navigation
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+
+>Extension VSCODE - REACT
+rnf
+
+>Navigation Bottom-tabs
+npm install @react-navigation/bottom-tabs
+
+###########################################################################
+>node -v
+v20.11.1
