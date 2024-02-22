@@ -19,6 +19,12 @@ npm start || npm run android
 npm install @react-navigation/native
 npx expo install react-native-screens react-native-safe-area-context
 
+>Expo Maps
+npx expo install react-native-maps
+
+>Expo Location
+npm install expo-location
+
 >Extension VSCODE - REACT
 rnf  (components)
 rnss (style)
