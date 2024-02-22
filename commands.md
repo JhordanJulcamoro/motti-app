@@ -20,7 +20,8 @@ npm install @react-navigation/native
 npx expo install react-native-screens react-native-safe-area-context
 
 >Extension VSCODE - REACT
-rnf
+rnf  (components)
+rnss (style)
 
 >Navigation Bottom-tabs
 npm install @react-navigation/bottom-tabs
