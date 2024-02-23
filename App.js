@@ -5,10 +5,18 @@ import TabNavigation from "./App/Navigations/TabNavigation";
 import { useEffect, useState } from "react";
 import * as Location from "expo-location";
 import { UserLocationContext } from "./App/Context/UserLocationContext";
+import { useFonts } from 'expo-font';
 
 export default function App() {
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
+  const [fontsLoaded, fontError] = useFonts({
+    'roboto-bold': require('./assets/Fonts/RobotoCondensed-Bold.ttf'),
+    'roboto-light': require('./assets/Fonts/RobotoCondensed-Light.ttf'),
+    'roboto': require('./assets/Fonts/RobotoCondensed-Medium.ttf'),
+    'roboto-regular': require('./assets/Fonts/RobotoCondensed-Regular.ttf'),
+    'roboto-thin': require('./assets/Fonts/RobotoCondensed-Thin.ttf'),
+  });
 
   useEffect(() => {
     (async () => {

@@ -25,6 +25,9 @@ npx expo install react-native-maps
 >Expo Location
 npm install expo-location
 
+>Expo Font
+npx expo install expo-font
+
 >Extension VSCODE - REACT
 rnf  (components)
 rnss (style)

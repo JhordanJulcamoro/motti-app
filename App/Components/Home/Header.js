@@ -19,7 +19,7 @@ export default function Header() {
       />
 
       <View>
-        <TextInput placeholder="Search" style={styles.searchBar} />
+        <TextInput placeholder="Where do you go?" style={styles.searchBar} />
       </View>
       <Image
         source={require("./../../../assets/icon_motti.png")}
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     paddingLeft: 10,
     width:Dimensions.get('screen').width*0.6,
+    fontFamily: "roboto",
   },
   userImage: {
     width: 50,

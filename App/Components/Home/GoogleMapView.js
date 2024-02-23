@@ -9,19 +9,29 @@ export default function GoogleMapView() {
 
   const { location, setLocation } = useContext(UserLocationContext);
 
-  useEffect(()=> {
-    if(location){
+  useEffect(() => {
+    if (location) {
       setmapRegion({
         latitude: location.coords.latitude,
-        longitude:  location.coords.longitude,
+        longitude: location.coords.longitude,
         latitudeDelta: 0.01,
         longitudeDelta: 0.0421,
-      })
+      });
     }
-  }, [])
+  }, []);
 
   return (
     <View style={{ marginTop: 5 }}>
+      <Text
+        style={{
+          fontSize: 20,
+          marginBottom: 10,
+          fontWeight: "600",
+          fontFamily: "roboto-bold",
+        }}
+      >
+        Where do you go?
+      </Text>
       <MapView
         style={{
           width: Dimensions.get("screen").width * 0.98,
