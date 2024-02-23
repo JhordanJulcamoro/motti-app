@@ -1,22 +1,30 @@
 import { View, Text, Dimensions } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 import * as Location from "expo-location";
+import { UserLocationContext } from "../../Context/UserLocationContext";
 
 export default function GoogleMapView() {
-  const [mapRegion, setmapRegion] = useState({
-    latitude: -7.1614,
-    longitude: -78.5001,
-    latitudeDelta: 0.0522,
-    longitudeDelta: 0.0421,
-  });
+  const [mapRegion, setmapRegion] = useState([]);
 
+  const { location, setLocation } = useContext(UserLocationContext);
+
+  useEffect(()=> {
+    if(location){
+      setmapRegion({
+        latitude: location.coords.latitude,
+        longitude:  location.coords.longitude,
+        latitudeDelta: 0.01,
+        longitudeDelta: 0.0421,
+      })
+    }
+  }, [])
 
   return (
-    <View style={{ marginTop: 20 }}>
+    <View style={{ marginTop: 5 }}>
       <MapView
         style={{
-          width: Dimensions.get("screen").width * 1,
+          width: Dimensions.get("screen").width * 0.98,
           height: Dimensions.get("screen").height * 0.23,
           borderRadius: 20,
           // width: Dimensions.get('screen').width*0.89,

@@ -5,7 +5,7 @@ import GoogleMapView from "../Components/Home/GoogleMapView";
 
 export default function Home() {
   return (
-    <View style={{ paddingTop: 5 }}>
+    <View style={{ padding: 5 }}>
       <Header />
       <GoogleMapView/>
     </View>
