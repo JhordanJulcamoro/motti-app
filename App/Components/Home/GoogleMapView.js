@@ -17,7 +17,7 @@ export default function GoogleMapView() {
         latitudeDelta: 0.01,
         longitudeDelta: 0.0421,
       });
-      console.log("mapRegion::",mapRegion)
+      console.log("mapRegion::", mapRegion);
     }
   }, [location]);
 
@@ -28,25 +28,29 @@ export default function GoogleMapView() {
           width: Dimensions.get("screen").width * 0.98,
           height: Dimensions.get("screen").height * 0.23,
           borderRadius: 20,
-          // width: Dimensions.get('screen').width*0.89,
         }}
         provider={PROVIDER_GOOGLE}
-        showsUserLocation={true}
+        showsUserLocation={false} //muestra el boton azul de la ubicacion actual
         region={mapRegion}
-        customMapStyle={[]}
-        customMarker={<Image source={require("../../../assets/icon_motti.png")}/>}
       >
-        {/* {mapRegion && (
+        {mapRegion && (
           <Marker
-          title="You are here"
-          description="This is your current location"
-          coordinate={{
-            latitude: mapRegion.latitude,
-            longitude: mapRegion.longitude,
-          }}
-          image={require("../../../assets/icon_motti.png")}
-          />
-        )} */}
+            title="You are here"
+            description="This is your current location"
+            coordinate={{
+              latitude: mapRegion.latitude,
+              longitude: mapRegion.longitude,
+            }}
+          >
+            <Image
+              source={require("../../../assets/persona.png")}
+              style={{
+                width: 32,
+                height: 32,
+              }}
+            />
+          </Marker>
+        )}
       </MapView>
     </View>
   );
