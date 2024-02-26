@@ -9,6 +9,12 @@ emulator -list-avds
 >Ejecutar emulador:
  .\emulator -avd Pixel_6_API_34
 
+>Emulador en IOS
+npm run ios 
+
+>Setear emulador en IOS por default
+xcrun simctl boot "iPhone 15 Pro"
+
 ###########################################################################
 >Crea Proyecto
 npm install --global expo-cli
