@@ -38,6 +38,8 @@ rnss (style)
 >Navigation Bottom-tabs
 npm install @react-navigation/bottom-tabs
 
+>Install axios
+npm install axios
 ###########################################################################
 >node -v
 v20.11.1
