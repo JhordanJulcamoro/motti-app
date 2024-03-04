@@ -13,12 +13,15 @@ export default function PlaceItem({ place }) {
                 gap: 15,
                 marginBottom: 20
             }}>
-            <Image source={{ uri: "https://maps.googleapis.com/maps/api/place/photo?"+
-            "maxwidth=400" +
-            "&photo_reference=" +
-            place?.photos[0]?.photo_reference +
-            "&key=AIzaSyBPJ1jwGwlcdM067zYXwd4AgzzAC_2mM8Y" }}
-                style={{ width: 110, height: 110, borderRadius: 15 }} />
+                <Image source={{
+                    uri: "https://maps.googleapis.com/maps/api/place/photo?" +
+                        "maxwidth=400" +
+                        "&photo_reference=" +
+                        place?.photos[0]?.photo_reference +
+                        "&key=AIzaSyBPJ1jwGwlcdM067zYXwd4AgzzAC_2mM8Y"
+                }}
+                    style={{ width: 110, height: 110, borderRadius: 15 }} />
+            
             <View style={{ flex: 1 }}>
                 <Text
                     numberOfLines={2}
